@@ -10,17 +10,17 @@
 </head>
 <body>
     <div id="example-1" class="container p-5">
-        
-            <button class="btn" @click="LIKE()"><img src="like.png" alt="" width="50" height="50">{{ like }}</button>
-            <button class="btn" @click="LOVE()"><img src="love.png" alt="" width="50" height="50">{{ love }}</button>
-            <button class="btn" @click="LAUGH()"><img src="haha.png" alt="" width="50" height="50">{{ laugh }}</button>
-            <button class="btn" @click="WOW()"><img src="wow.png" alt="" width="50" height="50">{{ wow }}</button>
-            <button class="btn" @click="SAD()"><img src="sad.png" alt="" width="50" height="50">{{ sad }}</button>
-            <button class="btn" @click="ANGRY()"><img src="angry.png" alt="" width="50" height="50">{{ angry }}</button>
-            <br><p style="font-size: 50px; font-family: 'Courier New', Courier, monospace;">{{ counter }}</p>
+    
+        <button class="btn" @click="LIKE()"><img src="like.png" alt="" width="50" height="50">{{ like }}</button>
+        <button class="btn" @click="LOVE()"><img src="love.png" alt="" width="50" height="50">{{ love }}</button>
+        <button class="btn" @click="HAHA()"><img src="haha.png" alt="" width="50" height="50">{{ laugh }}</button>
+        <button class="btn" @click="WOW()"><img src="wow.png" alt="" width="50" height="50">{{ wow }}</button>
+        <button class="btn" @click="SAD()"><img src="sad.png" alt="" width="50" height="50">{{ sad }}</button>
+        <button class="btn" @click="ANGRY()"><img src="angry.png" alt="" width="50" height="50">{{ angry }}</button>
+        <br><p style="font-size: 50px; font-family: 'Courier New', Courier, monospace;" class="container p-5">{{ counter }}</p>
         
     </div>
-    </div>
+    
 
     <script>
     var example1 = new Vue({
@@ -43,7 +43,7 @@
             this.counter += 20 ;
             this.love += 1 ;
         },
-        LAUGH: function() {
+        HAHA: function() {
             this.counter += 25 ;
             this.laugh += 1 ;
         },
